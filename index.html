@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: grey;
+        }
+
+        li{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kontakt</a>
+        </li>
+      </ul>
+    <br>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Imie</label>
+                <input type="name" class="form-control" id="inputEmail4" placeholder="Wprowadź imię">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Nazwisko</label>
+                <input type="name" class="form-control" id="inputPassword4" placeholder="Wprowadź nazwisko">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">E-mail</label>
+            <input type="email" class="form-control" id="inputAddress" placeholder="Podaj email">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword4">Wybierz płeć</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Mężczyzna
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Kobieta
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-group col-md-4">
+                <label for="inputState">Opis</label>
+                <textarea rows="4" cols="50">tekst</textarea>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Wiek</label>
+                <select>
+                    <option value="wartość1">18</option>
+                    <option value="wartość2">19</option>
+                    <option value="wartość3">20</option>
+                    <option value="wartość4">21</option>
+                    <option value="wartość5">23</option>
+                    <option value="wartość6">24</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-group">
+                <label for="inputZip">Stan cywilny</label>
+                <select>
+                    <option value="wartość1">Panna</option>
+                    <option value="wartość2">Kawaler</option>
+                </select>
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Wyślij</button>
+        <button type="reset" class="btn btn-primary">Wyczyść</button>
+    </form>
+
+
+</ul>
+</body>
+</html>
