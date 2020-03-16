@@ -1,7 +1,37 @@
 body {
-    background-color: yellow;
+    background-color: grey;
 }
 
 li {
     display: inline;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.header {
+    color(bg-light)
+}
+
+.main {
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.a {
+    left: 50%;
+    margin-right: -50%;
+    height: 200px;
+    border-radius: 10px;
 }
