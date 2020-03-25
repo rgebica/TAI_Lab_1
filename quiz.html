@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Quiz</title>
     <link rel="stylesheet" href="css/quiz.css" />
+    <link rel="stylesheet" href="css/timer.css"/>
     <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,9 +23,12 @@
 </head>
 <body>
 <div class="quiz-wrapper padding-wrapper">
-    <div class="timer"></div>
-
     <!--    Quiz container    -->
+
+    <div id="app">
+
+    </div>
+
     <div class="container list">
         <div class="question-wrapper">
             Question:
@@ -72,7 +76,7 @@
             </table>
         </div>
     </div>
-    <a href="index.html" class="quiz-back">Go back to the main page</a>
+    <a href="index.html"><button type="button" class="btn btn-primary">Go main page</button></a>
 </div>
 <!--    Quiz container end    -->
 
@@ -84,5 +88,6 @@
 
 <script src="js/scroll.js"></script>
 <script src="js/quiz.js"></script>
+<script src="js/timer.js"></script>
 </body>
 </html>

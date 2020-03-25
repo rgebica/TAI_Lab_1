@@ -1,3 +1,4 @@
+
 const next = document.querySelector(".next");
 const previous = document.querySelector(".previous");
 
@@ -28,11 +29,41 @@ async function fetchData() {
 }
 
 (async () => {
+
     const preQuestions = await fetchData();
+
+    window.onload = function () {
+        var fiveMinutes = 60 * 5,
+            display = document.querySelector('#time');
+        startTimer(fiveMinutes, display);
+    };
 
     function setCurrentQuestionNumber(number) {
         currentQuestionWrapper.innerHTML = `${++number}/${preQuestions.length}`;
     }
+
+    const startTimer = (duration, display) => {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.textContent = minutes + ":" + seconds;
+
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    };
+
+    window.onload = function () {
+        var fiveMinutes = 60 * 5,
+            display = document.querySelector('#time');
+        startTimer(fiveMinutes, display);
+    };
 
     function getPreviousAnswer(index) {
         answers.forEach(item => {
@@ -171,4 +202,11 @@ async function fetchData() {
         quiz.style.display = "block";
         result.style.display = "none";
     });
+
+    window.onload = function () {
+        var time = 15,
+            display = document.querySelector('#time');
+        startTimer(time, display);
+    };
+
 })();
